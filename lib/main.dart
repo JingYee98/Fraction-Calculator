@@ -143,7 +143,7 @@ class _MyAppState extends State<MyApp> {
                             h = (f/i).round();
                           }
                           else{
-                            if(value.name == 'Addition'){
+                             if(value.name == 'Addition'){
                                 g = (a*d)+(b*c);
                                 h = b*d; 
                             }
@@ -152,14 +152,14 @@ class _MyAppState extends State<MyApp> {
                                 h = b*d;
                             }
                             if(value.name == 'Multiplication'){
-                                e = a*c;
-                                f = b*d;
+                                g = a*c;
+                                h = b*d;
                             }
                             if(value.name == 'Division'){
-                                e = a*d;
-                                f = b*c;
+                                g = a*d;
+                                h = b*c;
                             }
-                          }   
+                          }
                         }
                       }
                     );
