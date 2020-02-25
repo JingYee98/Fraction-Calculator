@@ -137,12 +137,7 @@ class _MyAppState extends State<MyApp> {
                           f = b*c;
                         }
 
-                        for(int i=2;i<=10000;i++){
-                          if(e%i==0 && f%i==0){
-                            g = (e/i).round();
-                            h = (f/i).round();
-                          }
-                          else{
+                        else{
                              if(value.name == 'Addition'){
                                 g = (a*d)+(b*c);
                                 h = b*d; 
@@ -160,6 +155,12 @@ class _MyAppState extends State<MyApp> {
                                 h = b*c;
                             }
                           }
+                        for(int i=2;i<=10000;i++){
+                          if(e%i==0 && f%i==0){
+                            g = (e/i).round();
+                            h = (f/i).round();
+                          }
+                          
                         }
                       }
                     );
