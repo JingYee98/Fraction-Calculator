@@ -137,11 +137,29 @@ class _MyAppState extends State<MyApp> {
                           f = b*c;
                         }
 
-                        for(int i=2;i<=2000;i++){
+                        for(int i=2;i<=10000;i++){
                           if(e%i==0 && f%i==0){
                             g = (e/i).round();
                             h = (f/i).round();
                           }
+                          else{
+                            if(value.name == 'Addition'){
+                                g = (a*d)+(b*c);
+                                h = b*d; 
+                            }
+                            if(value.name == 'Subtraction'){
+                                g = (a*d)-(b*c);
+                                h = b*d;
+                            }
+                            if(value.name == 'Multiplication'){
+                                e = a*c;
+                                f = b*d;
+                            }
+                            if(value.name == 'Division'){
+                                e = a*d;
+                                f = b*c;
+                            }
+                          }   
                         }
                       }
                     );
@@ -266,6 +284,8 @@ class _MyAppState extends State<MyApp> {
       _bcontroller.text = "";
       _ccontroller.text = "";
       _dcontroller.text = "";
+      e=0;
+      f=0;
       g=0;
       h=0;
     });
